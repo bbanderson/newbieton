@@ -1,0 +1,10 @@
+<body>
+    <form action="/selectResult">
+    {% for ingredient in ingredients.all %}
+    {{ ingredient.name }} <input name="ingredients" type="checkbox" value="{{ ingredient.id }}" >
+    {% endfor %}
+    <br><br>
+    <input type="submit" value="검색하기">
+    </form>
+
+</body>
